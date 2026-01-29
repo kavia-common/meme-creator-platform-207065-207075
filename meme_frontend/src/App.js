@@ -262,7 +262,7 @@ function App() {
                     aria-pressed={isActive}
                     title={t.name}
                   >
-                    <img alt={t.name} src={buildApiUrl(t.image_url)} />
+                    <img alt={t.name} src={buildApiUrl(t.thumbnail_url || t.image_url)} />
                     <div className="template-meta">
                       <div className="template-name">{t.name}</div>
                       <div className="template-size">
